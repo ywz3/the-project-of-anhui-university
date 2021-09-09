@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>项目网站</title>
-    <style>
+    <style type="text/css">
         body{
             background-image: url("./image/simon-lee-pLmKmygkT7g-unsplash.jpg");
             background-size: 100%;
@@ -16,12 +16,36 @@
             from{opacity: 0}
             to{opacity: 100}
         }
-        b{
-            animation: hello 1s infinite;
+        p{
+            font-size: 100px;
+            text-align: center;
+            width: 100%;
+            animation: hello 6s infinite;
+        }
+        @keyframes first {
+            0%{opacity:0}
+            25%{opacity: 100}
+            50%{opacity: 100}
+            100%{opacity: 0}
+        }
+        @keyframes second {
+            0%{opacity: 0}
+            25%{opacity: 0}
+            50%{opacity: 100}
+            100%{opacity: 0}
+        }
+        #h{
+            animation: first 6s infinite;
+        }
+        #i{
+            animation: second 6s infinite;
         }
     </style>
 </head>
 <body>
-<b>hello world</b>
+<audio  src="music/海底气泡.mp3"  controls="controls" autoplay="autoplay"   loop="loop">
+</audio>
+<p id="h">hello world</p>
+<p id="i">i am coming</p>
 </body>
 </html>
