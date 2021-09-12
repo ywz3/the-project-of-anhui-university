@@ -35,3 +35,57 @@
 	text-align: center;
 	color: aliceblue;
 }
+.i{
+    position: relative;
+    top: -21px;
+    width: 1518px;
+    height: 630px;
+    background-image: url("docs/img/pexels-fauxels-3183198.jpg");
+    background-size: 100% 100%;
+    font-size: 100px;
+    text-align: center;
+}
+#h{
+    animation: first 6s infinite;
+}
+#a{
+    animation: second 6s infinite;
+}
+.x{
+    animation: third 6s infinite;
+}
+.xmfc{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #ffd471;
+    position: relative;
+    top: -22px;
+    padding-top: 20px;
+}
+.xmcy{
+    width: 1519px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #ffd471;
+    position: relative;
+    top: -22px;
+    left:-190px;
+    padding-top: 20px;
+}
+.xmzz{
+    width: 1519px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #ffd471;
+    position: relative;
+    padding-top: 20px;
+
+}
+.wz{
+    font-size: 30px;
+    text-align: center;
+}
