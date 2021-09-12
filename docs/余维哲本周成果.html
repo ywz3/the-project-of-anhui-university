@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我的网站</title>
+    <link rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../own.css">
+    <script src="../jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../boostrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+    @keyframes first {
+        from{color: red}
+        to{color: green}
+        0%{opacity:0}
+        25%{opacity: 100}
+        50%{opacity: 100}
+        100%{opacity: 0}
+    }
+    @keyframes second {
+        from{color: red}
+        to{color: green}
+        0%{opacity: 0}
+        25%{opacity: 0}
+        50%{opacity: 100}
+        100%{opacity: 0}
+    }
+    @keyframes third {
+        0%{opacity: 0}
+        10%{opacity:100}
+        20%{opacity: 0}
+        30%{opacity:100}
+        40%{opacity: 0}
+        50%{opacity: 0}
+        60%{opacity:100}
+        70%{opacity: 0}
+        80%{opacity:100}
+        90%{opacity: 0}
+        100%{opacity:100}
+    }
+    </style>
+</head>
+
+<!--------------<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../assets/style.css" rel="stylesheet">
+</head>-------------->
+<body>
+<div style="background-color: beige">
+    <!--导航-->
+    <nav class="navbar navbar-default" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://github.com/ywz3/the-project-of-anhui-university" target="_blank">直接在github上查看项目</span></a>
+            </div >
+            <ul class="nav navbar-nav">
+                <li class="info"><a href="https://github.com/ywz3/the-project-of-anhui-university">首页&nbsp;&nbsp;☕</a></li>
+
+                <li><a href="https://github.com/ywz3/the-project-of-anhui-university">登录&nbsp;&nbsp;🌱</a></li>
+                <li style="float: right">
+                    <input type="text" value="搜索..." class="form-control" style="margin-top: 10px;">
+                </li>
+                <button class="btn btn-primary"  onClick="alert('暂时还没有开发搜索功能哟😭😭，敬请期待   🙏🙏🙏')" style="float: right;margin-top: 10px;margin-left: 750px;">🔍</button>
+
+                <div class="dropdown" style="float: left;margin-top: 10px;margin-left: 15px;background-color: black">
+                    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">关于&nbsp;&nbsp;👀
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1" style="background-color: black;">
+                        <li role="presentation" style="background-color: black">
+                            <a role="menuitem" tabindex="-1" href="" target="_blank" style="color:#9CA27F">&nbsp;&nbsp;🍃</a>
+                        </li>
+                        <li role="presentation" style="background-color: black" >
+                            <a role="menuitem" tabindex="-1" href="" target="_blank" style="color:#9CA27F">&nbsp;&nbsp;🌴</a>
+                        </li>
+                        <li role="presentation" style="background-color: black">
+                            <a role="menuitem" tabindex="-1" href="" target="_blank" style="color:#9CA27F">&nbsp;&nbsp;🌵</a>
+                        </li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" style="background-color: black">
+                            <a role="menuitem" tabindex="-1" href="" target="_blank" style="color:#9CA27F">&nbsp;&nbsp;🌾</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </ul>
+        </div>
+    </nav>
+
+<div class="i" >
+    <audio  src="music/海底气泡.mp3"  controls="controls" autoplay="autoplay"   loop="loop">
+    </audio>
+    <p id="h">欢迎来到 </p>
+    <p id="a">安徽大学边缘计算&系统项目</p>
+    <p style="font-size: 20px" class="x">下拉查看更多</p>
+    <p class="x">⬇</p>
+</div>
+
+<div class="xmfc">
+<p>🕐part 1   项目风采   （我们要做什么）</p>
+
+</div>
+
+    <!--轮播图-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-top: -30px">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/clay-banks-oO6Gm16Cqcg-unsplash.jpg" alt="">
+                <div class="carousel-caption">
+                    <h1>项目相关图片与介绍</h1>
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/xps-zcbtpjgToUY-unsplash.jpg" alt="">
+                <div class="carousel-caption">
+                    <h1>项目相关图片与介绍</h1>
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/xps-EzYq1HOl5_8-unsplash.jpg" alt="">
+                <div class="carousel-caption">
+                    <h1>项目相关图片与介绍</h1>
+                    <p>简介</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+                <!--产品功能截图-->
+    <hr>
+            <div class="xmzz">🕒part 2  项目资质  （我们有什么）</div>
+    <hr>
+                <div class="container screenshot">
+                    <div class="row item">
+                        <div class="col-md-5"><img src="img/camylla-battani-A5E-ym6WyGM-unsplash.jpg" alt=""></div>
+                        <div class="col-md-7">
+                            <blockquote> <h2><mark>指导老师：孙辉</mark></h2><hr><hr>
+                                <ins><p>简介</p></ins></blockquote>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-md-7">
+                            <blockquote><h2><mark>拥有的资源</mark></h2><hr>
+                                <ins> <p>外观简单别致，没有花里花哨的修饰却也有别有一番情趣，给<hr>人简洁、清爽的视觉效果。
+
+                                    简约的设计理念，细腻、精致的做<hr>工，这不仅是产品，更是时尚魅力诱惑的艺术品，相结 合带<hr>来唯美的生活享受。时尚简洁大方是作品的灵魂，端庄高贵无<hr>比的诱惑，让人心迷意乱、难以抵挡，她的魅力才不同凡响。<hr>
+
+                                    黑白色彩是一种经典的搭配。设计简约、落落大方，非常有艺<hr>术感。（仅供展示效果与本项目无关）</p></ins></blockquote>
+                        </div>
+                        <div class="col-md-5"><img src="img/fotis-fotopoulos-cDqeubPcJg4-unsplash.jpg" alt=""></div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-md-5"><img src="img/pexels-ben-mack-5326952.jpg" alt=""></div>
+                        <div class="col-md-7">
+                            <blockquote><h2><mark>其他</mark></h2><hr><hr>
+                                <ins><p> </p></ins></blockquote>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+
+                <!--案例-->
+                <hr>
+                <div class="xmcy">🕕part 3   项目组成员介绍与成果  （我们做了什么）</div>
+                <hr>
+                <hr>
+                <a href="https://github.com/ywz3/the-project-of-anhui-university" class="wz">🕉点击可看项目的github网站🕉</a>
+                <hr>
+                <div class="case container" style="background-color:">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/simon-lee-pLmKmygkT7g-unsplash.jpg" alt="">
+                            <h2>💼陈清源</h2>
+                            <a href="">详情点个人链接</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/masahiro-miyagi-gsj9yY3g2N8-unsplash.jpg" alt="">
+                            <h2>💼黄建栋</h2>
+                            <a href="https://github.com/ywz3/the-project-of-anhui-university/tree/main/docs/%E9%BB%84%E5%BB%BA%E6%A0%8B%E6%9C%AC%E5%91%A8%E6%88%90%E6%9E%9C">详情点个人链接</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/xps-pduutGbL2-M-unsplash.jpg" alt="">
+                            <h2>💼李培文</h2>
+                            <a href="https://github.com/ywz3/the-project-of-anhui-university/tree/main/docs/%E6%9D%8E%E5%9F%B9%E6%96%87%E6%9C%AC%E5%91%A8%E6%88%90%E6%9E%9C">详情点个人链接</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/masahiro-miyagi-gsj9yY3g2N8-unsplash.jpg" alt="">
+                            <h2>💼余维哲</h2>
+                            <a href="https://github.com/ywz3/the-project-of-anhui-university">详情点个人链接</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/masahiro-miyagi-gsj9yY3g2N8-unsplash.jpg" alt="">
+                            <h2>成员头像</h2>
+                            <a href="">详情点个人链接</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/masahiro-miyagi-gsj9yY3g2N8-unsplash.jpg" alt="">
+                            <h2>成员头像</h2>
+                            <a href="">详情点个人链接</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--底部-->
+
+                <div class="bottom" style="margin-left: -174px;margin-top: 10px">
+                    <footer>
+                        🐾 -余维哲- 2021 -🐾 <br>
+                        <a href="https://www.bilibili.com/video/BV14a4y1i76G?from=search&seid=15906337037885858149" target="_blank" >love all of you💗</a>
+                    </footer>
+                </div>
+
+
+
+
+            </div>
+</body>
+</html>
